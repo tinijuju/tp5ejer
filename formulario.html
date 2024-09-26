@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <label for="nombre">nombre de usuario</label><br>
+            <input type="text" name="nombreUsuario" id="nombre" required><br>
+            <label for="apellido">apellido</label><br>
+            <input type="text" value="" id="apellido" required><br>
+            <label for="contra">Contraseña</label><br>
+            <input type="password" name="pass" id="contra"><br>
+            <label for="dni">DNI</label><br>
+            <input type="number" name="dni" id="dni"><br>
+
+            <label>Sexo</label><br>
+            <input type="radio" name="genero" value="fem" id="femenino" checked>
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" name="genero" value="masc" id="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <label for="foto">Incluir foto de perfil</label>
+            <input type="file" name="perfil" id="foto"><br>
+
+            <input type="submit" name="enviar" value="Enviar datos">
+            <input type="reset" name="borrar" value="Borrar datos" disabled>
+        </fieldset>
+    </form>
+
+</body>
+</html>
